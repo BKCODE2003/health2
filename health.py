@@ -38,7 +38,7 @@ with col2:
    exercise=st.selectbox("Select your intensity of exersice",["Light","Moderate","Vigorous"])
  #This will create dropdown 
  
-diet=st.text_area("Enter your Dietary restrictions and preferances") 
+diet=st.text_area("Enter your Dietary restrictions ") 
 # resizable text box(using text_area)
 send_request =st.button("Give me my plan") 
 # This will create button

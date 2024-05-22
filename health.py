@@ -1,6 +1,6 @@
 import google.generativeai as genai
 import streamlit as st
-import streamlit.components.v1 as components
+
 
 genai.configure(api_key = st.secrets["api_key"])
 model = genai.GenerativeModel("gemini-pro")
@@ -12,24 +12,12 @@ def get_email(age,gender,height,weight,fitness,exercise,diet):
     return response.text
 
 
-# print(get_email("student","princpal","leave for 3 days","formal","I cannot attend college for the next 3 days"))
-components.html("""
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
-    <span class="material-symbols-outlined">fitness_center</span>
-""", height=0)
-
-
 
 #website using steamlit
 
 st.set_page_config(
     page_title="Fitness Plan Generator",
-    page_icon=":fitness_center:",
+    page_icon=":barbell:",
     layout="centered",
     initial_sidebar_state="collapsed" #for side bar initially collapsed
 )

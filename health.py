@@ -17,7 +17,7 @@ def get_email(age,gender,height,weight,fitness,exercise,diet):
 
 st.set_page_config(
     page_title="Fitness Plan Generator",
-    page_icon="🏋️‍♂️",
+    page_icon="💪",
     layout="centered",
     initial_sidebar_state="collapsed" #for side bar initially collapsed
 )
